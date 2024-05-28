@@ -1,0 +1,65 @@
+.landing-page {
+    text-align: center;
+    margin-top: 100px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  .timesheet-container {
+    padding: 20px;
+  }
+  
+  .timesheet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .p-table {
+    margin-top: 20px;
+  }
+  
+  .p-table th, .p-table td {
+    text-align: center;
+  }
+  .landing-page header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: bounceIn 1.5s ease;
+  }
+  
+  .landing-page main p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    animation: slideIn 1.5s ease;
+  }
+  
+  .landing-page button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .landing-page button:hover {
+    background-color: #0055b3;
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes bounceIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
